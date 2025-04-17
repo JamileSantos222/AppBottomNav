@@ -14,7 +14,7 @@
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/idAppBar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content" >
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/idMenuChat"
@@ -25,14 +25,16 @@
             app:title="WhatsApp"
             app:titleTextColor="#25D366" />
 
+        </com.google.android.material.appbar.AppBarLayout>
+
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/idMenuChat"
             android:drawableStart="@drawable/baseline_search"
             android:drawablePadding="18dp"
-            android:hint="@android:string/search_go"
+            android:hint="@string/pergunte_meta_ai_ou_pesquise"
             android:inputType="textPersonName"
-            android:layout_below="@id/idMenuChat"
             android:padding="20sp" />
 
 
@@ -41,10 +43,10 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/idBottomNav"
-        android:layout_gravity="bottom"
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
         app:labelVisibilityMode="labeled"
-        app:menu="@menu/menu_bottom_chat" />
+        app:menu="@menu/menu" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
